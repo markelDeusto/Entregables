@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+  font-family: "Bebas Neue", "sans-serif";
+}
+
+a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+
+.nav-principal {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 5rem 0 5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0d6d683;
+}
+
+.nav-principal img {
+  height: 7rem;
+  margin-right: 15rem;
+}
+.nav-principal a {
+  color: rgba(79, 181, 171, 1);
+  font-size: 2rem;
+}
+
+/*MAIN*/
+
+.contenido {
+  margin: 0 59.2rem 0 5rem;
+}
+.contenedor-principal {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(193, 179, 179, 0.702)
+  );
+  height: 73rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .contenedor-principal {
+    height: 115rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contenedor-principal p {
+  font-size: 9rem;
+  text-align: center;
+  justify-content: center;
+  width: 75rem;
+  margin-bottom: 5rem;
+}
+.contenedor-principal p span {
+  font-size: 8rem;
+  font-family: "Calligraffitti", cursive;
+  font-weight: bold;
+}
+.contenido-izq {
+  margin-left: 10rem;
+}
+@media (max-width: 768px) {
+  .contenedor-principal p {
+    font-size: 9rem;
+    text-align: center;
+    justify-content: center;
+    width: 75rem;
+  }
+  .contenedor-principal p span {
+    font-size: 7rem;
+  }
+  .contenido-izq {
+    margin-left: 0;
+  }
+}
+
+.contenido-dcha img {
+  height: 70rem;
+  max-width: 100%;
+  margin-left: 15rem;
+}
+.boton-landing {
+  border: 2px solid black;
+  background-color: rgba(231, 196, 196, 0.572);
+  width: 30rem;
+  height: 12rem;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0 20rem 0 20rem;
+  border-radius: 1rem;
+}
+@media (max-width: 768px) {
+  .contenido-dcha img {
+    height: 65rem;
+    margin-left: 0rem;
+  }
+  .boton-landing {
+    border: 2px solid black;
+    background-color: rgba(231, 196, 196, 0.572);
+    width: 30rem;
+    height: 12rem;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 20rem 0 20rem;
+    border-radius: 1rem;
+  }
+}
+
+/* FOOTER */
+.footer-pagina {
+  display: grid;
+  text-align: center;
+  background-color: rgba(193, 179, 179, 0.702);
+}
+.contenido-footer {
+  margin: 0 5rem 0 5rem;
+  border-top: 1px solid #e1e1e1;
+}
+.footer-pagina img {
+  max-width: 3rem;
+}
