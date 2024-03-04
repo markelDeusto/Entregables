@@ -12,10 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -35,8 +37,52 @@
     </header>
 
     <main>
-      <div class="contenedor-principal">
-        
+      <div class="contenedor-principal-qs">
+        <div class="parte-arriba">
+          <div class="quienes-somos">
+            <h1>¿Quienes somos?</h1>
+            <p>
+              En UrbanStyle, celebramos la evolución de la moda urbana. <br />
+              Hace unos años, el concepto de estilo urbano no siempre era bien
+              recibido, ya que la autenticidad de las calles desafiaba los
+              estándares predefinidos. Sin embargo, en nuestra tienda,
+              fusionamos estos dos mundos de manera única. Nos enorgullece ser
+              el puente que permite que la gente urbana vista con estilo y
+              confianza.
+            </p>
+          </div>
+
+          <div class="imagen-sobre-nosotros">
+            <img
+              src="img/modelo-sobre-nosotros.png"
+              alt="modelo-sobre-nosotros"
+            />
+          </div>
+        </div>
+        <div class="parte-abajo">
+          <h1>¿Tienes dudas? Contáctanos:</h1>
+          <div class="formulario">
+            <form action="#" method="POST"></form>
+            <!--duda sobre si puedo poner un br aquí abajo-->
+            <label for="campo-nombre">Nombre: </label>
+            <input
+              type="text"
+              name="nombre"
+              id="campo-nombre"
+              placeholder="Escribe tu nombre:"
+            />
+            <label for="campo-email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="campo-email"
+              placeholder="Escribe tu email:"
+            />
+            
+            <label for="campo-pregunta">Pregunta: </label>
+            <textarea name="pregunta" id="campo-pregunta" placeholder="Escribe tu pregunta:" cols="30" rows="10"></textarea>
+          </div>
+        </div>
       </div>
     </main>
 
