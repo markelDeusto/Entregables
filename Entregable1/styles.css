@@ -250,7 +250,9 @@ a {
   height: 15rem;
   width: 30rem;
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
+
 
 /*Catalogo*/
 
@@ -358,7 +360,7 @@ a {
   height: 70%;
 }
 
-.mujeres{
+.mujeres {
   font-size: 5rem;
   text-align: center;
 }
