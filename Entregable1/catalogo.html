@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing-page</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,11 +25,19 @@
       <div class="contenedor-navegacion">
         <nav class="nav-principal">
           <a href="index.html">
-            <img src="img/foto-logo.png" alt="Logo Tienda" />
+            <img src="images/foto-logo.png" alt="Logo Tienda" />
           </a>
-          <a href="sobre-nosotros.html">Sobre Nosotros</a>
-          <a href="catalogo.html">Catálogo</a>
-          <a href="eco-friendly.html">Eco-friendly</a>
+          <ul class="elementos-navegacion">
+            <li>
+              <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li>
+              <a href="catalogo.html">Catálogo</a>
+            </li>
+            <li>
+              <a href="eco-friendly.html">Eco-friendly</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -41,7 +49,7 @@
             <h1>Catálogo hombres:</h1>
             <a href="#hombres">
               <img
-                src="img/modelo-hombre-catalogo.jpg"
+                src="images/modelo-hombre-catalogo.jpg"
                 alt="modelo-catalogo-hombres"
               />
             </a>
@@ -50,7 +58,7 @@
             <h1>Catálogo mujeres:</h1>
             <a href="#mujeres">
               <img
-                src="img/modelo-mujer-catalogo.jpg"
+                src="images/modelo-mujer-catalogo.jpg"
                 alt="modelo-catalogo-mujeres"
               />
             </a>
@@ -63,10 +71,10 @@
             <div class="articulo1">
               <h3>Sudadera Kani</h3>
               <img
-                src="img/modelo1.jpg"
+                src="images/modelo1.jpg"
                 alt="modelo1"
-                onmouseover="this.src='img/modelo1-detras.jpg'"
-                onmouseout="this.src='img/modelo1.jpg'"
+                onmouseover="this.src='images/modelo1-detras.jpg'"
+                onmouseout="this.src='images/modelo1.jpg'"
               />
               <p class="precio">50€</p>
               <a href="#">
@@ -78,10 +86,10 @@
             <div class="articulo2">
               <h3>Pantalones rotos</h3>
               <img
-                src="img/modelo2.jpg"
+                src="images/modelo2.jpg"
                 alt="modelo2"
-                onmouseover="this.src='img/modelo2-detras.jpg'"
-                onmouseout="this.src='img/modelo2.jpg'"
+                onmouseover="this.src='images/modelo2-detras.jpg'"
+                onmouseout="this.src='images/modelo2.jpg'"
               />
               <p class="precio">30€</p>
               <a href="#">
@@ -91,12 +99,12 @@
               </a>
             </div>
             <div class="articulo3">
-              <h3>Camiseta Palm Paradise</h3>
+              <h3>Camiseta Paradise</h3>
               <img
-                src="img/modelo3.webp"
+                src="images/modelo3.webp"
                 alt="modelo3"
-                onmouseover="this.src='img/modelo3-detras.webp'"
-                onmouseout="this.src='img/modelo3.webp'"
+                onmouseover="this.src='images/modelo3-detras.webp'"
+                onmouseout="this.src='images/modelo3.webp'"
               />
               <p class="precio">40€</p>
               <a href="#">
@@ -108,10 +116,10 @@
             <div class="articulo4">
               <h3>Chaqueta americana</h3>
               <img
-                src="img/modelo4.webp"
+                src="images/modelo4.webp"
                 alt="modelo4"
-                onmouseover="this.src='img/modelo4-detras.webp'"
-                onmouseout="this.src='img/modelo4.webp'"
+                onmouseover="this.src='images/modelo4-detras.webp'"
+                onmouseout="this.src='images/modelo4.webp'"
               />
               <p class="precio">80€</p>
               <a href="#">
@@ -129,10 +137,10 @@
             <div class="articulo5">
               <h3>Pantalones rasgados</h3>
               <img
-                src="img/modelo5.jpg"
+                src="images/modelo5.jpg"
                 alt="modelo5"
-                onmouseover="this.src='img/modelo5-detras.jpg'"
-                onmouseout="this.src='img/modelo5.jpg'"
+                onmouseover="this.src='images/modelo5-detras.jpg'"
+                onmouseout="this.src='images/modelo5.jpg'"
               />
               <p class="precio">30€</p>
               <a href="#">
@@ -144,10 +152,10 @@
             <div class="articulo6">
               <h3>Sudadera de botones</h3>
               <img
-                src="img/modelo6.webp"
+                src="images/modelo6.webp"
                 alt="modelo6"
-                onmouseover="this.src='img/modelo6-detras.webp'"
-                onmouseout="this.src='img/modelo6.webp'"
+                onmouseover="this.src='images/modelo6-detras.webp'"
+                onmouseout="this.src='images/modelo6.webp'"
               />
               <p class="precio">20€</p>
               <a href="#">
@@ -159,10 +167,10 @@
             <div class="articulo7">
               <h3>Chaqueta Ellese</h3>
               <img
-                src="img/modelo7.webp"
+                src="images/modelo7.webp"
                 alt="modelo7"
-                onmouseover="this.src='img/modelo7-detras.webp'"
-                onmouseout="this.src='img/modelo7.webp'"
+                onmouseover="this.src='images/modelo7-detras.webp'"
+                onmouseout="this.src='images/modelo7.webp'"
               />
               <p class="precio">40€</p>
               <a href="#">
@@ -174,10 +182,10 @@
             <div class="articulo8">
               <h3>Zapatillas suela alta</h3>
               <img
-                src="img/modelo8.jpg"
+                src="images/modelo8.jpg"
                 alt="modelo8"
-                onmouseover="this.src='img/modelo8-detras.jpg'"
-                onmouseout="this.src='img/modelo8.jpg'"
+                onmouseover="this.src='images/modelo8-detras.jpg'"
+                onmouseout="this.src='images/modelo8.jpg'"
               />
               <p class="precio">120€</p>
               <a href="#">
@@ -195,7 +203,7 @@
       <div class="contenido-footer">
         <p class="slogan">Made for y'all</p>
         <p class="copyright">Todos los derechos reservados</p>
-        <img src="img/foto-logo.png" alt="logo-tienda" />
+        <img src="images/foto-logo.png" alt="logo-tienda" />
       </div>
     </footer>
   </body>
