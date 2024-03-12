@@ -35,6 +35,10 @@ a {
   color: rgba(79, 181, 171, 1);
   margin-left: 6rem;
   margin-right: 6rem;
+  text-align: center;
+}
+.nav-principal li {
+  text-align: center;
 }
 
 .elementos-navegacion {
@@ -57,19 +61,18 @@ a {
     margin-right: 2rem;
   }
 }
-
 @media (max-width: 390px) {
   .contenedor-navegacion {
     max-width: 39rem;
   }
   .elementos-navegacion {
     max-width: 39rem;
-    padding-left: 0;
+    padding: 0;
   }
   .nav-principal {
     display: grid;
     grid-template-columns: auto;
-    text-align: center;
+    justify-content: center;
   }
   .nav-principal a {
     margin-left: 1rem;
@@ -404,7 +407,6 @@ a {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-
 .catalogo-hombres {
   margin: 5rem;
   height: 87rem;
@@ -431,7 +433,7 @@ a {
 }
 @media (max-width: 768px) {
   .contenedor-principal-cat {
-    height: 500rem;
+    height: 560rem;
     display: flex;
     flex-direction: column;
   }
@@ -447,24 +449,51 @@ a {
   .hombres-mujeres {
     display: flex;
     flex-direction: column;
+    height: 220rem;
   }
 }
-
+@media (max-width: 390px) {
+  .contenedor-principal-cat {
+    height: 670rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .catalogo-hombres {
+    height: 50rem;
+  }
+  .catalogo-mujeres {
+    margin-top: 0;
+  }
+  .catalogo-mujeres img {
+    width: 100%;
+  }
+  .hombres-mujeres {
+    display: flex;
+    flex-direction: column;
+    height: 120rem;
+  }
+}
 .hombres {
   border-top: 1px solid #e1e1e1;
   font-size: 5rem;
   text-align: center;
   height: 100rem;
 }
+@media (max-width: 768px) {
+  .hombres {
+    height: 170rem;
+  }
+}
+@media (max-width: 390px) {
+  .hombres {
+    height: 280rem;
+  }
+}
 
 .hombres h2 {
   margin-bottom: 1rem;
 }
-@media (max-width: 768px) {
-  .hombres {
-    margin-top: 120rem;
-  }
-}
+
 .precio {
   font-size: 3rem;
   margin-top: 1rem;
@@ -478,6 +507,18 @@ a {
   margin-left: 5rem;
   margin-right: 5rem;
 }
+@media (max-width: 768px) {
+  .articulos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 390px) {
+  .articulos {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
 .articulos h3 {
   font-size: 4rem;
   margin-bottom: 1rem;
@@ -488,40 +529,72 @@ a {
 
 .articulo1 img {
   width: 100%;
-  height: 70%;
+  height: 50rem;
 }
 .articulo2 img {
   width: 100%;
-  height: 70%;
+  height: 50rem;
 }
 .articulo3 img {
   width: 100%;
-  height: 70%;
+  height: 50rem;
 }
 .articulo4 img {
   width: 100%;
-  height: 70%;
+  height: 50rem;
 }
 .articulo5 img {
   width: 100%;
-  height: 70%;
+  height: 50rem;
 }
 .articulo6 img {
   width: 100%;
-  height: 70%;
+  height: 50rem;
 }
 .articulo7 img {
   width: 100%;
-  height: 70%;
+  height: 50rem;
 }
 .articulo8 img {
   width: 100%;
-  height: 70%;
+  height: 50rem;
+}
+@media (max-width: 390px) {
+  .articulo1 img {
+    height: 40rem;
+  }
+  .articulo2 img {
+    height: 40rem;
+  }
+  .articulo3 img {
+    height: 40rem;
+  }
+  .articulo4 img {
+    height: 40rem;
+  }
+  .articulo5 img {
+    height: 40rem;
+  }
+  .articulo6 img {
+    height: 40rem;
+  }
+  .articulo7 img {
+    height: 40rem;
+  }
+  .articulo8 img {
+    height: 40rem;
+  }
 }
 
 .mujeres {
   font-size: 5rem;
   text-align: center;
+  border-top: 1px solid #e1e1e1;
+}
+@media (max-width: 390px) {
+  .mujeres {
+    height: 280rem;
+  }
 }
 .mujeres h2 {
   margin-bottom: 1rem;
@@ -538,6 +611,20 @@ a {
   height: 72.25rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .contenedor-principal-eco {
+    height: 130rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 390px) {
+  .contenedor-principal-eco {
+    height: 120rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .compromiso {
   margin: 2rem;
@@ -559,16 +646,39 @@ a {
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .izquierda-eco {
+    justify-content: center;
+  }
+}
 .derecha-eco {
   display: flex;
   align-items: center;
   margin-left: 3rem;
 }
+@media (max-width: 768px) {
+  .derecha-eco {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
 .izquierda-eco img {
   height: 40rem;
   width: 50rem;
 }
+@media (max-width: 390px) {
+  .izquierda-eco img {
+    width: 25rem;
+    height: 20rem;
+  }
+}
 .derecha-eco img {
   width: 40rem;
   height: 40rem;
+}
+@media (max-width: 390px) {
+  .derecha-eco img {
+    width: 20rem;
+    height: 20rem;
+  }
 }
