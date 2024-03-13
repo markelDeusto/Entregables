@@ -165,6 +165,7 @@ a {
   font-size: 4rem;
   margin: 0 20rem 0 25rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .contenido-dcha img {
@@ -348,6 +349,9 @@ a {
     margin-top: 5rem;
     width: 100%;
   }
+  .parte-abajo h1 {
+    font-size: 3rem;
+  }
   .formulario {
     margin: 5rem;
     margin-left: 7rem;
@@ -363,13 +367,20 @@ a {
   .parte-abajo {
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10rem;
+    width: 39rem;
+  }
+  .parte-abajo h1 {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
   .formulario {
-    margin-left: 2rem;
-    width: 30rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    width: 32em;
     height: 50rem;
   }
   .formulario label {
@@ -387,6 +398,9 @@ a {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
+}
+.enviar{
+  cursor: pointer;
 }
 
 /*Catalogo*/
@@ -525,6 +539,7 @@ a {
 }
 .boton-agregar-carrito {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .articulo1 img {
@@ -621,7 +636,7 @@ a {
 }
 @media (max-width: 390px) {
   .contenedor-principal-eco {
-    height: 120rem;
+    height: 125rem;
     display: flex;
     flex-direction: column;
   }
@@ -641,6 +656,20 @@ a {
 .compromiso p {
   font-family: Barlow Condensed, sans-serif;
   font-size: 2rem;
+}
+@media (max-width: 390px) {
+  .compromiso {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .compromiso h3{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .compromiso p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 .izquierda-eco {
   display: flex;
